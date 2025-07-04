@@ -19,8 +19,8 @@ app.use(session({
     cookie: { maxAge: 60000 }
 }));
 
-const indexRouter = require('./routes/index');
-const authRouter = require('./routes/auth');
+const indexRouter = require('./controller/indexController');
+const authRouter = require('./controller/authController');
 app.use('/', indexRouter);
 app.use('/', authRouter);
 
